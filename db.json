@@ -97,7 +97,6 @@
       "answer": "w",
       "id": 5
     },
-
     {
       "course": "Angular 2+",
       "question": "Which company started developing Angular (as a Green Project)?",
@@ -137,6 +136,16 @@
       "option4": "roba roba waste",
       "answer": "roba roba waste",
       "id": 10
+    },
+    {
+      "course": "java",
+      "question": "jkjh",
+      "option1": "fsfd",
+      "option2": "fdfd",
+      "option3": "dfd",
+      "option4": "fdf",
+      "answer": "dg",
+      "id": 11
     }
   ]
 }
