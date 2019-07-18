@@ -15,6 +15,7 @@ export class CreateQuestionPaperComponent implements OnInit {
 
     questionPaper: questions[]=[];
     selectedQuestions:questions[]=[];
+    
     count:number=0;
 
     // course:string;
