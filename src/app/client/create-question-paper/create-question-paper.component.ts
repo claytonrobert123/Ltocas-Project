@@ -15,6 +15,7 @@ export class CreateQuestionPaperComponent implements OnInit {
 
     questionPaper: questions[]=[];
     selectedQuestions:questions[]=[];
+    submitted : Boolean;
     
     count:number=0;
 
@@ -70,6 +71,20 @@ export class CreateQuestionPaperComponent implements OnInit {
 
     }
   )
+  
+  }
+
+  getquestionPaper(selectedQuestions){
+    this.submitted = true;
+
+    
+    console.log(this.questionPaper);
+    this.serivces.savedQuestionPaper(selectedQuestions)
+    .subscribe(
+      response => alert('SUCCESS!! :-)\n\n'+response),
+      error => alert('Registration Failed!'+error)
+    ); 
+
   
   }
 
