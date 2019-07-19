@@ -9,7 +9,7 @@
   
 
       <mat-selection-list >
-            <mat-list-option *ngFor="let data of selectedQuestions">
+            <mat-list-option *ngFor="let data of selectedQuestions" (click)="getQuestionData(data.id)">
                     {{data.question}}
             </mat-list-option>
           </mat-selection-list>
