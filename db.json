@@ -397,113 +397,17 @@
     ]
   ],
   "savedQuestionPaper": [
-    [],
-    [],
-    [
-      {
-        "course": "Net",
-        "question": "What can be the return type of main method?",
-        "option1": "ss",
-        "option2": "",
-        "option3": "",
-        "option4": "",
-        "answer": "",
-        "id": 3
-      },
-      {
-        "course": "Net",
-        "question": "Which is a primitive data type?",
-        "option1": "ww",
-        "option2": "ww",
-        "option3": "ww",
-        "option4": "w",
-        "answer": "w",
-        "id": 5
-      }
-    ],
-    [],
-    [],
-    [
-      {
-        "course": "java",
-        "question": "After compilation of a Java program which code generated?",
-        "option1": "wertyuio",
-        "option2": "sdfff",
-        "option3": "ffffff",
-        "option4": "ffffff",
-        "answer": "ffffffff",
-        "id": 1
-      },
-      {
-        "course": "java",
-        "question": "Which declarations are required in a Java program?",
-        "option1": "",
-        "option2": "",
-        "option3": "",
-        "option4": "",
-        "answer": "",
-        "id": 2
-      },
-      {
-        "course": "java",
-        "question": "Which is not a valid type of variable?",
-        "option1": "ss",
-        "option2": "",
-        "option3": "",
-        "option4": "",
-        "answer": "",
-        "id": 4
-      },
-      {
-        "course": "java",
-        "question": "Which Scanner class method is used to read integer value from the user?",
-        "option1": "asdf",
-        "option2": "asdf",
-        "option3": "dsd",
-        "option4": "dsf",
-        "answer": "dfgd",
-        "id": 9
-      },
-      {
-        "course": "java",
-        "question": "Which Scanner class method is used to read string value from the user?",
-        "option1": "waste",
-        "option2": "super waste",
-        "option3": "roba waste",
-        "option4": "roba roba waste",
-        "answer": "roba roba waste",
-        "id": 10
-      },
-      {
-        "course": "java",
-        "question": "jkjh",
-        "option1": "fsfd",
-        "option2": "fdfd",
-        "option3": "dfd",
-        "option4": "fdf",
-        "answer": "dg",
-        "id": 11
-      },
-      {
-        "course": "Net",
-        "question": "What can be the return type of main method?",
-        "option1": "ss",
-        "option2": "",
-        "option3": "",
-        "option4": "",
-        "answer": "",
-        "id": 3
-      },
-      {
-        "course": "Net",
-        "question": "Which is a primitive data type?",
-        "option1": "ww",
-        "option2": "ww",
-        "option3": "ww",
-        "option4": "w",
-        "answer": "w",
-        "id": 5
-      }
-    ]
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
   ]
 }

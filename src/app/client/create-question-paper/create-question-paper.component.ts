@@ -16,7 +16,10 @@ export class CreateQuestionPaperComponent implements OnInit {
     questionPaper: questions[]=[];
     selectedQuestions:questions[]=[];
     submitted : Boolean;
-    questionPaperID: number[]=[];
+    questionPaperID: number[]=[]
+    selectedQuestions1: any[]=[];
+    c:number=1;
+
 
     
     count:number=0;
@@ -78,22 +81,37 @@ export class CreateQuestionPaperComponent implements OnInit {
 
   getQuestionData(Qid){
 
-    this.questionPaperID = Qid;
+    for(var i=0;i<this.c;i++){
+      this.questionPaperID[i]= Qid;
+    }
+   this.c++
     console.log(this.questionPaperID)
-
-
   }
 
-  getquestionPaper(selectedQuestions){
-    this.submitted = true;
+  getquestionPaper(){
+    console.log(this.questionPaperID)
 
-    
-    console.log(this.questionPaper);
-    this.serivces.savedQuestionPaper(selectedQuestions.this.questionPaperID)
-    .subscribe(
-      response => alert('SUCCESS!! :-)\n\n'+response),
-      error => alert('Registration Failed!'+error)
-    ); 
+       this.submitted = true;
+    //console.log(this.selectedQuestions);
+    for(var i=0;i<this.questionPaperID.length;i++){
+      console.log(this.questionPaperID.length)
+    this.serivces.getRequiredQuestion(this.questionPaperID[i])
+     .subscribe(
+      data=>{
+        this.selectedQuestions1[i] = data;
+        this.selectedQuestions1[i].push(data);
+
+      }
+    );
+        console.log(this.selectedQuestions1[i]);
+
+     this.serivces.savedQuestionPaper(this.selectedQuestions1[i])
+     .subscribe(
+       response => alert('SUCCESS!! :-)\n\n'+response),
+       error => alert('Failed !! :-)\n\n'+error),
+     )
+
+    }
 
   
   }

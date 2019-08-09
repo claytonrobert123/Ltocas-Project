@@ -24,6 +24,10 @@ export class ServiceService {
  questionPaper(){
   return this._http.get<any>(this._url1);
  }
+ getRequiredQuestion(id:Number){
+   return this._http.get<any>(`${this._url1}/${id}`);
+
+ }
 
  savedQuestionPaper(userData1){
   return this._http.post<any>(this._url2,userData1);
